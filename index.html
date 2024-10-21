@@ -17,25 +17,24 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
 
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    
+    
 
     body{
-      background-color: hsl(0, 0%, 95%)
+      background-color: hsl(0, 0%, 95%);
     }
 
     .container{
       display: flex;
-      margin: auto;
-      width: 50%;
-      position:absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%)
+      align-items: center;
+      justify-content: center;
+      margin-top: 7%;
+      margin-bottom: 7%;
     }
 
     .Sedans{
       height: 400px;
+      width: 200px;
       background-color: hsl(31, 77%, 52%);
       padding: 35px;
       border-top-left-radius: 9px;
@@ -44,12 +43,14 @@
 
     .suv{
       height: 400px;
+      width: 200px;
       background-color: hsl(184, 100%, 22%);
       padding: 35px;
     }
 
     .luxury{
       height: 400px;
+      width: 200px;
       background-color: hsl(179, 100%, 13%);
       padding: 35px;
       border-top-right-radius: 9px;
@@ -78,6 +79,7 @@
       text-align: center;
       border-radius: 35px;
       margin-top: 70px;
+      margin-bottom: 20px;
       font-family: Lexend Deca;
       width: 100px;
     }
@@ -104,32 +106,40 @@
       width: 100px;
     }
 
-    @media (min-width:150px) and (max-width:800px) {
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+    @media (min-width:300px) and (max-width:800px) {
       body{
       background-color: hsl(0, 0%, 95%);
       margin: 20px;
-      padding: 0;
       }
 
       .container{
         display: flex;
         flex-direction: column;
-        margin: auto;
+        margin-top: 70px;
+        margin-bottom: 50px;
         width: 100%;
       }
 
       .Sedans{
         height: 300px;
+        width: auto;
         border-top-right-radius: 9px;
         border-bottom-left-radius: 0px;
       }
 
       .suv{
         height: 300px;
+        width: auto;
       }
 
       .luxury{
         height: 300px;
+        width: auto;
         border-bottom-left-radius: 9px;
         border-top-right-radius: 0px;
       }
@@ -153,6 +163,7 @@
       }
  
     }
+
   </style>
 </head>
 <body>
